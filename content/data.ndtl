@@ -1,5 +1,6 @@
 var DATABASE = `
 ITEM Collection = Capitalism?
+  DATE : 17th June 2020
   TYPE : note
   DONE : false
   FILE : Conveyor Belt by Ilaria Demichele.gif
