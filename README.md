@@ -1,4 +1,4 @@
-[**Live web version here**](https://kormyen.github.io/memex/)
+[**Live web version here**](https://seylorx1.github.io/memex/)
 
 **Memex** is a [personal knowledge base](https://scholar.colorado.edu/csci_techreports/931/).
 
