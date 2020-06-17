@@ -1,11 +1,13 @@
 var DATABASE = `
-ITEM CAPITALISM
+ITEM Collection = Capitalism?
   TYPE : note
   DONE : false
   FILE : Conveyor Belt by Ilaria Demichele.gif
   NOTE
-    > Items and resource management as a capatilist ideology?
+    > Items and resource management as a reflection capatilist ideals?
     - At univeristy so far, we have been told to openly consider the potential consequences of our design elements, including the effect such elements may have on the user.
-    - It's worth contemplating how items are represented in resource management games such as the ambigiously titled project I'm working on the now. 
+    - It's worth contemplating how items are represented in resource management games such as the ambigiously titled project I'm working on the now. Considering a narrative will be implemented as soon as I get all of the engine stuff working to an acceptable level, perhaps commenting on the metagame (or, at the very least, the represented metagame:- the player's actions and their effects within the bounds of the narrative) could serve as a pivotal plot point.
+    - I essentially want to make the player ask themselves about their obsession with collecting and obtaining items in the virtual space. Is this a reflection of the working class in our capitalist society? Are we simply enacting out a projection of an idealisation of capitalism to their extremities because we are taught that they are 'good' a.k.a "the American dream." Perhaps.
+    - tl;dr How can I make players question their tendancies towards mass item collection effectively?
   TAGS : gamedev, spacegame
 `
