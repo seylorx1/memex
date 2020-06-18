@@ -12,10 +12,10 @@ BAD CODING HABITS
     - The server now has to figure out the movement calculations for each player. Again, no biggie, just access clients[id].playerData.movementInput. Again smooth sailing.
     - Now the server has to send that info back. The actual process of sending of information is fine, and the client receives this data. But now it needs to figure out what to do. Currently it looks through the clientside connectedPlayers list and iterates through each entry. If 20 player entities need their information updated, I think (?) that the cycles amount to the 20th triangular number.
     - 20(20 + 1) / 2 = 210 Cycles. This can be brought down to 20 cycles, meaning I have an excess of 190. 
-    - Again, I would like to reiterate that it's not *that* much of a deal at this stage - any pc worth it's weight can blast through 190 cycles in a stupendously quick time - but it's more a reflection of how lazy programming could spiral.
+    - Again, I would like to reiterate that it's not *that* much of a deal at this stage - any pc worth its weight can blast through 190 cycles in a stupendously quick time - but it's more a reflection of how lazy programming could spiral.
     - Think if there was 200 players moving simultaneously, that's 20.1k cycles!
     > tl;dr EXPEDITIOUS, NOT EXPONENTIAL!
-  TAGS : gamedev, rant
+  TAGS : gamedev, moan
 
 ITEM Collection = Capitalism?
   DATE : 17th June 2020
