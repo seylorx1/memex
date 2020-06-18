@@ -1,4 +1,21 @@
 var DATABASE = `
+BAD CODING HABITS
+  DATE : 18th June 2020
+  TYPE : moan
+  LINK : https://www.youtube.com/watch?v=uh8XaC0Y5MA
+  NOTE
+    > Tom OOPery
+    - There's something that's been bothering me today. For the longest time now, I have always preferred dynamic lists over fixed length arrays because in many cases, the positives of being able to add shit without a care in the world outweight the (now almost negligible) performance cost of the simpler fixed length array. However, I have recently introduced myself to the wonders of networking and server code. Written from scratch (because Unity has no reliable netcode shiz going) I have managed to piece together a localhosted client/server setup from a combination of the knowledge gained from my time creating mods for Minecraft and the attached tutorial series.
+    - I have gotten round to instantiating, more-or-less establishing, the players in the scene on the client-side, but I'm adding all player entities to a dynamic list on the client. (Note: not on the server. I followed the tutorial pretty closely until I understood what the fuck was going on and, once I had it sussed, I went on my own...) Internally, the game assigns an ID to each client for the duration that they're connected. However, my choice of using a dynamic list for this means that, in order to find the correct player, the game has to look through *almost* the entire list EVERY TIME A PACKET IS RECEIVED ON THE CLIENT.
+    - This is not really bueno. Not really bueno at all.
+    - It's not that big of a deal for any modern machine, but say there's 20 players connected, and each player is sending inputs to the server concurrently. The server can direcly access the position in the fixed array. clients[id]. No biggie. Smooth sailing.
+    - The server now has to figure out the movement calculations for each player. Again, no biggie, just access clients[id].playerData.movementInput. Again smooth sailing.
+    - Now the server has to send that info back. The actual process of sending of information is fine, and the client receives this data. But now it needs to figure out what to do. Currently it looks through the clientside connectedPlayers list and iterates through each entry. If 20 player entities need their information updated, I think (?) that the cycles amount to the 20th triangular number.
+    - 20(20 + 1) / 2 = 210 Cycles. This can be brought down to 20 cycles, meaning I have an excess of 190. 
+    - Again, I would like to reiterate that it's not *that* much of a deal at this stage - any pc worth it's weight can blast through 190 cycles in a stupendously quick time - but it's more a reflection of how lazy programming could spiral.
+    - Think if there was 200 players moving simultaneously, that's 20.1k cycles!
+    > tl;dr EXPEDITIOUS, NOT EXPONENTIAL!
+
 ITEM Collection = Capitalism?
   DATE : 17th June 2020
   TYPE : note
@@ -9,6 +26,6 @@ ITEM Collection = Capitalism?
     - At univeristy so far, we have been told to openly consider the potential consequences of our design elements, including the effect such elements may have on the user.
     - It's worth contemplating how items are represented in resource management games such as the ambigiously titled project I'm working on the now. Considering a narrative will be implemented as soon as I get all of the engine stuff working to an acceptable level, perhaps commenting on the metagame (or, at the very least, the represented metagame:- the player's actions and their effects within the bounds of the narrative) could serve as a pivotal plot point.
     - I essentially want to make the player ask themselves about their obsession with collecting and obtaining items in the virtual space. Is this a reflection of the working class in our capitalist society? Are we simply enacting out a projection of an idealisation of capitalism to their extremities because we are taught that they are 'good' a.k.a "the American dream." Perhaps.
-    - tl;dr How can I make players question their tendancies towards mass item collection effectively?
+    > tl;dr How can I make players question their tendancies towards mass item collection effectively as to not cause the player discomfort?
   TAGS : gamedev, spacegame
 `

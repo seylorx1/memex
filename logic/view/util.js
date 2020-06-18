@@ -39,6 +39,7 @@ function Util()
         case 'link': icon = 'fas fa-link'; break;
         case 'true': icon = 'fas fa-check'; break;
         case 'false': icon = 'fas fa-times'; break;
+        case 'moan': icon = 'fas fa-meh-rolling-eyes'; break;
       }
     return icon;
   }
