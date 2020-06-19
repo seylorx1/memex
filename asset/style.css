@@ -165,7 +165,7 @@ a:active, a:focus {
 }
 .pagetitle-sub {
   font-size: small;
-  margin-top: -1vh;
+  margin-top: -1em;
   position: absolute;
   color: var(--color-menu);
   opacity: var(--alpha-idle);
@@ -174,7 +174,7 @@ a:active, a:focus {
 
 .pagetitle-link {
   font-size: small;
-  margin-top: -1vh;
+  margin-top: -0.5em;
   position: absolute;
   color: var(--color-menu);
   opacity: var(--alpha-idle);
