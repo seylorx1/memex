@@ -31,6 +31,8 @@
   --size-menu-itemgroup-sepv: 30px;   /*vertical space between menu types (types to terms, terms to tags)*/
   --size-menu-tag-sepv: 10px;         /*space between tag items*/
 
+  --size-grid-title-gutter: 20px;
+  --size-grid-nav-gutter: 80px;
   --size-grid-gutter: 20px;
   --size-grid-column: 350px;
 
@@ -152,10 +154,51 @@ a:active, a:focus {
   margin-right: var(--size-grid-gutter) ;
 }
 
+.pagetitle {
+  padding-top: var(--size-grid-title-gutter);
+  color: var(--color-item);
+  margin: 0 auto 0 2em;
+  clear: left;
+  z-index: 200;
+  position: relative;
+  
+}
+.pagetitle-sub {
+  font-size: small;
+  margin-top: -1vh;
+  position: absolute;
+  color: var(--color-menu);
+  opacity: var(--alpha-idle);
+  text-decoration:none;
+}
+
+.pagetitle-link {
+  font-size: small;
+  margin-top: -1vh;
+  position: absolute;
+  color: var(--color-menu);
+  opacity: var(--alpha-idle);
+  text-decoration:none;
+}
+
+.pagetitle-link:hover {
+  background-color: var(--color-itemascent);
+  color: var(--color-menubg);
+  opacity: var(--alpha-ascent);
+}
+
+.pagetitle-line {
+  width:100vw;
+  background-color: var(--color-itembg);
+  margin-left: 1.25vw;
+  margin-top: -0.25vh;
+  position:absolute;
+}
+
+
 /* NAV */
 nav {
-	padding-top: var(--size-grid-gutter);
-  background: var(--color-bg);
+	padding-top: var(--size-grid-nav-gutter);
   opacity: var(--alpha-idle);
 	width: var(--size-menu);
 	position: fixed;
@@ -171,6 +214,7 @@ nav:hover {
 nav::-webkit-scrollbar {
   display: none;
 }
+
 .nav-itemgroup {
 	padding-bottom: var(--size-menu-itemgroup-sepv);
 	width: 100%;

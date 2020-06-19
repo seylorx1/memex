@@ -16,6 +16,7 @@ BAD CODING HABITS
     - Think if there was 200 players moving simultaneously, that's 20.1k cycles!
     > tl;dr EXPEDITIOUS, NOT EXPONENTIAL!
   TAGS : gamedev, moan
+  MARK : badcodinghabits_1
 
 ITEM Collection = Capitalism?
   DATE : 17th June 2020

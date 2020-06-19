@@ -26,6 +26,7 @@ if (window.showAdd != undefined && window.showAdd)
     this.addedQuote = false
     this.addedTerms = false
     this.addedProgress = false
+    this.addedMarker = false
 
     this.install = function()
     {
@@ -44,6 +45,7 @@ if (window.showAdd != undefined && window.showAdd)
       this.setupElement('Note', 'NOTE', 'text'); // long
       this.setupElement('Quote', 'QOTE', 'quote'); // long
       this.setupElement('Terms', 'TERM', 'quote'); // long
+      this.setupElement('Marker', 'MARK', 'text');
       // DONE
       // REVI
       this.keys = Object.keys(this.elementList);

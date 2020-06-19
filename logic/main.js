@@ -7,6 +7,7 @@ function Main()
   this.nav = null;
   this.add = null;
   this.write = null;
+  this.pagetitle = null;
 
   this.queryCur = '';
   this.queryPrev = '';
@@ -28,6 +29,8 @@ function Main()
       'article');
     this.nav = new Nav();
     this.nav.install(document.querySelector('nav'));
+    this.pagetitle = new PageTitle();
+    this.pagetitle.install(document.querySelector('pagetitle'));
 
     if (window.showAdd !== undefined && window.showAdd)
     {
@@ -45,6 +48,8 @@ function Main()
 
   this.start = function()
   {
+    this.pagetitle.display();
+
     this.articles = this.wrap.start(DATABASE);
     seer.note('process db');
 
