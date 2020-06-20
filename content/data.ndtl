@@ -1,5 +1,13 @@
 var DATABASE = `
+BEST BLACK FILMOGRAPHY (1980-2020)
+  DATE : 20th June 2020
+  TYPE : list
+  TAGS : film, interesting
+  LINK : https://www.theguardian.com/film/2020/jun/19/from-pressure-to-the-last-tree-10-of-the-best-black-british-films
+  QOTE : "From Pressure to The Last Tree: 10 of the best black British films"
+
 PIXELATED COMMUNITY
+  DATE : 19th June 2020
   FILE : DevScreen1.jpg
   TYPE : image
   TAGS : gamedev, screenshot
