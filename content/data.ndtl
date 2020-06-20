@@ -1,10 +1,11 @@
 var DATABASE = `
-BEST BLACK FILMOGRAPHY (1980-2020)
+FILMS TO WATCH
   DATE : 20th June 2020
+  SRCE : The Guardian
   TYPE : list
   TAGS : film, interesting
   LINK : https://www.theguardian.com/film/2020/jun/19/from-pressure-to-the-last-tree-10-of-the-best-black-british-films
-  QOTE : "From Pressure to The Last Tree: 10 of the best black British films"
+  QOTE : 'From Pressure to The Last Tree: 10 of the best black British films' - Ashley Clark
 
 PIXELATED COMMUNITY
   DATE : 19th June 2020
@@ -12,6 +13,7 @@ PIXELATED COMMUNITY
   TYPE : image
   TAGS : gamedev, screenshot
   LINK : https://twitter.com/imlyes/status/1274108333771952128
+  DONE : true
 
 BAD CODING HABITS
   DATE : 18th June 2020
@@ -31,6 +33,7 @@ BAD CODING HABITS
     > tl;dr EXPEDITIOUS, NOT EXPONENTIAL!
   TAGS : gamedev, moan
   MARK : badcodinghabits_1
+  DONE : true
 
 ITEM Collection = Capitalism?
   DATE : 17th June 2020
